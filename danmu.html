@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次作业</title>
+    <style>
+      .con {
+        background-color: floralwhite;
+        padding: 40px 80px 80px;
+      }
+      #screen {
+        background-color: #fff;
+        width: 100%;
+        height: 380px;
+        border: 1px solid rgb(229, 229, 229);
+        font-size: 28px;
+      }
+      .content {
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 3px;
+        width: 320px;
+        height: 35px;
+        font-size: 14px;
+        margin-top: 30px;
+      }
+
+      .send {
+        border: 1px solid rgb(230, 80, 30);
+        color: rgb(230, 80, 0);
+        border-radius: 3px;
+        text-align: center;
+        padding: 0;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        width: 159px;
+        background-color: white;
+      }
+
+      .clear {
+        border: 1px solid;
+        color: darkgray;
+        border-radius: 3px;
+        text-align: center;
+        padding: 0;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        width: 159px;
+        background-color: white;
+        }
+
+        .tangible {
+        border: 1px solid;
+        color: darkgray;
+        border-radius: 3px;
+        text-align: center;
+        padding: 0;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        width: 159px;
+        background-color: white;
+        }
+
+        .intangible {
+        border: 1px solid;
+        color: darkgray;
+        border-radius: 3px;
+        text-align: center;
+        padding: 0;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        width: 159px;
+        background-color: white;
+        }
+
+      .edit {
+        margin: 20px;
+        text-align: center;
+      }
+
+      .text {
+        position: absolute;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .dm_show{
+        margin: 30px;
+      }
+
+  </style>
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+      var getRandomColor = function(){    
+    return  '#' + (function(color){    
+         return (color +=  '0123456789abcdef'[Math.floor(Math.random()*16)])    
+         && (color.length == 6) ?  color : arguments.callee(color);    
+    })('');    
+ } 
+        $(function() {
+          $('.send').click(function() {
+            var val = $('.content').val();
+            var $content = $('<div class="text">' + val + '</div>');
+            $screen = $(document.getElementById("screen"));
+            var top = Math.random() * $screen.height()+20;
+
+            $content.css({
+              top: top + "px",
+              right: 80,
+              color: getRandomColor,
+              "font-size": Math.random()*30+16
+            });
+            $('.dm_show').append($content);
+            $content.animate({
+              right: $screen.width()+80-$content.width()
+            }, Math.random()*10000+1000, function() {
+              $(this).remove();
+            });
+          });
+          $(".content").keyup(function(e){
+            if(e.keyCode==13){
+              $(".send").click();
+            }
+          })
+          $('.clear').click(function() {
+            $('.dm_show').empty();
+          });
+          $('.tangible').click(function() {
+            $('.dm_show').css("opacity",0.3);
+          
+          })
+          $('.intangible').click(function() {
+            $('.dm_show').css("opacity",1);
+        
+          })
+        });
+  </script>
+</head>
+<body>
+    <div class="con">      
+      <div id="screen">
+        <div class="dm_show">
+          
+        </div>
+      </div>
+      <div class="edit">
+        <p>
+          <input placeholder="请输入弹幕" class="content" type="text" />
+        </p>
+        <p>
+          <input type="button" class="send" value="发送" />
+          <input type="button" class="clear" value="清屏" />
+          <input type="button" class="tangible" value="透明度" />
+          <input type="button" class="intangible" value="还原" />
+        </p>
+      </div>   
+    </div>
+  </body>
+</html>
