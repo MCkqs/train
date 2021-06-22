@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米官网</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+        height: 100px;
+        vertical-align: top;
+        background-color: rgb(189, 187, 186);
+        display: flex;
+        justify-content: center;
+        }
+        #header img{
+        width: 100px;
+        height: 100%;
+        display: inline-block;
+        }
+        #header h1{
+            display: inline-block;
+            margin: auto 0;
+            }
+
+        #id1{
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        #id1 img{
+          width: 100%;
+          height: 500px;
+        }
+        #id2{
+            width: 1200px;
+            height: 1300px;
+            margin: 0 auto;
+            }
+        #id2 img{
+          width: 400px;
+          height: 300px;
+        }
+
+        #id5{
+          width: 20%;
+          height: 100%;
+          display: flex;
+          background-color: #cdcdcd;
+
+        }
+        #id4{
+          width: 1200px;
+          height: 100%;
+          display: flex;
+          margin: 0 auto;
+
+        }
+        #contain1{
+          display: flex;
+          float: left;
+          height: 300px;
+          font-size: 20px;
+        }
+        #contain2{
+          display: flex;
+          float: right;
+          height: 300px;
+          font-size: 20px;
+        }
+        #id3{
+          display: flex;
+            background-color:rgb(189, 187, 186);
+            height: 300px;
+            width: 100%;
+            flex-direction: column;
+        }
+        #container3 img{
+            width: 230px;
+            height: 230px;
+            float: right;
+        }
+        #container3{
+            margin: auto 0;
+            display: flex;
+            width: 1200px;
+            height: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        #id5{
+          height: 185px;
+        }
+        #id6{
+          width: 80%;
+          height: 100%;
+        }
+        #id6 img{
+          width: 310px;
+          height: 100%;
+        }
+        #news{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            }
+        #news div{
+          width: 22%;
+          background-color:#FEF0EF;
+          height: 300px;
+        }
+        #news img{
+          width: 100%;
+          height: 92%;
+          padding:1%;
+          box-sizing: border-box;}
+        #news div p{text-align: center;margin: 0 auto;}
+        #foot{
+            margin:auto 0;
+            width: 1200px;
+            height: 20%;
+            border-top: black solid 2px;
+            margin: 0 auto;
+        }
+        #foot p{
+            text-align: center;
+        }
+        hr{
+          width: 100px;background-color: black;margin: 0 auto;
+        }
+        h1{
+          text-align: center;
+        }
+        p{
+          text-indent:36px;
+        }
+        #container{
+
+            width: 950px;
+            height: 100%;
+
+        }
+        #container a{
+            margin-top: 30px;
+            margin-left: 40px;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+      <img src="./img/小米商标.jpg">
+      <h1>小米官网</h1>
+      <div id="container">
+        <a href="./recordingus.html">关于我们</a><a href="./news.html">新闻</a><a href="./index.html">首页</a>
+    </div>
+    </div>
+    <div id="id">
+    <div id="id1">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div> 
+         <div class="carousel-inner">
+        <div class="carousel-item active"">
+          <img src="./img/xm1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/xm2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/xm3.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>.
+  <h1>服务范围</h1>
+      <hr><br>
+  <div id="id4">
+    
+  <div id="id5">
+    <svg t="1623897305257" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5096" width="200" height="200"><path d="M0 0h1024v1024H0z" fill="#cdcdcd" p-id="5097" data-spm-anchor-id="a313x.7781069.0.i25" class="selected"></path><path d="M493.909333 92.992a32 32 0 0 1 36.309334 0l383.936 264.661333A32 32 0 0 1 928 384v512a32 32 0 0 1-32 32H128A32 32 0 0 1 96 896V384a32 32 0 0 1 13.845333-26.346667zM544 512h-64v256h64V512z" fill="#111111" p-id="5098" data-spm-anchor-id="a313x.7781069.0.i24" class=""></path></svg>
+    <svg t="1623897593349" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8574" width="200" height="200"><path d="M0 0h1024v1024H0z" fill="#cdcdcd" p-id="8575" data-spm-anchor-id="a313x.7781069.0.i58" class="selected"></path><path d="M512 96c159.061333 0 288 128.938667 288 288 0 67.264-23.210667 130.837333-64.277333 181.397333l-2.901334 3.434667 4.181334 2.858667a394.581333 394.581333 0 0 1 169.322666 307.946666l0.256 8.021334 0.085334 8A32 32 0 0 1 874.666667 928H149.333333A32 32 0 0 1 117.333333 896c0-131.498667 64.896-251.52 169.557334-324.245333l4.266666-2.901334-2.88-3.456a286.997333 286.997333 0 0 1-64.170666-173.333333L224 384c0-159.061333 128.938667-288 288-288zM458.666667 384h-64l0.085333 4.714667A117.333333 117.333333 0 0 0 629.333333 384h-64l-0.106666 3.498667A53.333333 53.333333 0 0 1 458.666667 384z" fill="#111111" p-id="8576" data-spm-anchor-id="a313x.7781069.0.i57" class=""></path></svg>
+    <svg t="1623897520725" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8117" id="mx_n_1623897520726" width="200" height="200"><path d="M0 0h1024v1024H0z" fill="#cdcdcd" p-id="8118" data-spm-anchor-id="a313x.7781069.0.i49" class="selected"></path><path d="M512 53.333333c253.312 0 458.666667 205.354667 458.666667 458.666667S765.312 970.666667 512 970.666667 53.333333 765.312 53.333333 512 258.688 53.333333 512 53.333333z m199.296 217.770667L409.6 391.786667a32 32 0 0 0-17.813333 17.813333l-120.682667 301.696c-10.453333 26.133333 15.466667 52.053333 41.6 41.6L614.4 632.213333a32 32 0 0 0 17.813333-17.813333l120.682667-301.696c10.453333-26.133333-15.466667-52.053333-41.6-41.6z m-229.461333 210.730667a42.666667 42.666667 0 1 1 60.330666 60.330666 42.666667 42.666667 0 0 1-60.330666-60.330666z" fill="#111111" p-id="8119" data-spm-anchor-id="a313x.7781069.0.i50" class=""></path></svg>
+    <svg t="1623897639584" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8782" width="200" height="200"><path d="M0 0h1024v1024H0z" fill="#cdcdcd" p-id="8783" data-spm-anchor-id="a313x.7781069.0.i63" class="selected"></path><path d="M288 96a192 192 0 1 0 0 384H448a32 32 0 0 0 32-32v-160a192 192 0 0 0-192-192zM448 544h-160a192 192 0 1 0 192 192V576a32 32 0 0 0-32-32zM736 96a192 192 0 0 0-192 192V448a32 32 0 0 0 32 32h160a192 192 0 0 0 0-384z" fill="#111111" p-id="8784" data-spm-anchor-id="a313x.7781069.0.i62" class=""></path><path d="M736 544H576a32 32 0 0 0-32 32v160a192 192 0 1 0 192-192z" fill="#000000" p-id="8785" data-spm-anchor-id="a313x.7781069.0.i61" class=""></path></svg>
+  </div>
+  <div id="id6">
+  <img src="./img/小米1.jpg">
+  <img src="./img/小米2.jpg">
+  <img src="./img/小米3.jpg">
+</div>
+</div>
+<br>
+<h1>热门产品</h1>
+      <hr><br>
+    <div id="id2">
+          <div id="contain1">
+        <h1>红米10</h1>
+        <img src="./img/小米1.jpg">
+        <p>5000mAh大电池，充至100%仅需42分钟*！
+          同时配备电池健康显示，帮你清晰了解电池健
+          康状态。这是一块能适应全场景的变速金刚屏。采用旗舰级
+          LCD材质，支持高刷新率，高触控采样率，广色域。
+          有了新一代康宁®大猩猩®玻璃Victus™金刚护体。
+          这块好画质的屏幕不仅无惧磨损，更让你大饱眼福。<br>
+          Note 10以“人人都能享受5G速度感与科技感”为使命，
+          做高品质5G双卡双待手机，超强信号，超低功耗。
+          针对高铁、电梯等场景进行专项优化，让你时刻体验疾速网络。
+          </p>
+      </div>
+      <div id="contain2">
+        <p>轻薄、小巧，却集齐了所有关于青春的梦想，为你一一实现。
+          它以前所未见的轻、薄、多彩，带来非凡握持感受。
+          专业电影相机，定制美颜自拍，一镜拍出自信。
+          更有旗舰性能，骁龙780G强大内芯，带来震撼表现。<br>
+          小米11 青春版一出场就亮点满满，引领青春潮流。
+          小米11 青春版，轻薄称手，每一面都拿的出手。
+开创性轻薄结构，将轻薄手机推向了超轻的159g，
+和薄至6.81mm这样的全新纪录。
+        </p>
+          <img src="./img/小米3.jpg">
+          <h1>小米11 青春版</h1>
+      </div>
+      <div id="contain1">
+        <h1>小米11 Ultra</h1>
+         <img src="./img/小米2.jpg">
+         <p>匠心独具的现代陶瓷工艺，坚固度、耐久性远超想象，细腻的触感有如凝脂，这一点，你的双手将会印象深刻。
+          黑色沉稳大气，白色优雅温润，罕见的大理石纹则是特立独行，三款配色都质感非凡。<br>
+          在0.02-0.1lux 极暗光环境中，肉眼基本失灵，但小米自研的「夜枭算法」，
+          通过AI 多帧融合，仍能看清世界原本的样子。<br>
+          想记录萌宠灵活的身影，却拍成模糊的表情包？
+有了「运动抓拍」，焦点会对人或动物进行跟随，
+并智能调整曝光参数。你的运动身姿再也不会糊成“路人”。
+          </p>
+      </div>
+      <div id="contain2">
+        <p>&nbsp;&nbsp;&nbsp;黑鲨4 Pro配备的6400万高解析力主摄，可以输出拥有超丰富细节的图像。120°超广角相机，以更开阔的视野记录精彩世界。500万像素微距镜头。
+          探索微观之美,内置多项有趣拍摄功能，尽显计算摄影的强大魅力。<br>
+          基于MIUI12的全新JOYUI12.5，完善了基础体验，新增了多功能NFC及多项游戏辅助功能，
+          让玩家在生活和游戏中获得全场景的优异体验。<br>全系采用了一块全新的6.67英寸三星AMOLED屏幕。新一代的E4发光材质，
+          </p>
+           <img src="./img/小米4.png">
+           <h1>黑鲨4 Pro</h1>
+      </div>
+     </div>
+    </div>
+
+      <h1>新闻中心</h1>
+      <hr><br>
+
+
+    <div  id="news">
+        
+
+    </div><br>
+     <div id="id3">
+      <div id="container3">
+        <div class="foot">
+        <svg t="1624332274031" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6700" data-spm-anchor-id="a313x.7781069.0.i2" width="200" height="200"><path d="M673.194667 413.973333h78.72c-14.890667-116.053333-116.629333-205.824-239.914667-205.824-123.306667 0-225.024 89.792-239.914667 205.824h78.72v264.661334H234.666667a85.333333 85.333333 0 0 1-85.333334-85.333334v-93.994666a85.376 85.376 0 0 1 60.693334-81.706667l0.917333-0.256C224.490667 267.157333 354.090667 149.333333 512 149.333333c157.888 0 287.509333 117.802667 301.056 268.010667l0.917333 0.256A85.376 85.376 0 0 1 874.666667 499.306667v93.994666a85.333333 85.333333 0 0 1-85.333334 85.333334l-55.722666-0.021334v40.384a106.709333 106.709333 0 0 1-74.368 101.696A78.506667 78.506667 0 0 1 584.704 874.666667h-115.178667a78.421333 78.421333 0 0 1 0-156.821334h115.178667c27.050667 0 50.901333 13.696 64.981333 34.517334a63.744 63.744 0 0 0 23.381334-45.76l0.128-3.754667v-288.853333z" p-id="6701" data-spm-anchor-id="a313x.7781069.0.i3" class="selected" fill="#2c2c2c"></path></svg>
+          <p>客服电话：12345678</p>
+      </div>
+        <div class="foot">
+      <svg t="1624332364445" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7087" width="200" height="200"><path d="M512 128c164.949333 0 298.666667 129.941333 298.666667 290.261333 0 3.392-0.064 6.784-0.213334 10.24-3.669333 95.914667-58.24 203.776-147.797333 313.173334a1260.714667 1260.714667 0 0 1-139.818667 144.768l-10.837333 9.322666-10.837333-9.322666-13.013334-11.626667a1260.714667 1260.714667 0 0 1-126.805333-133.162667c-89.557333-109.376-144.128-217.237333-147.818667-313.173333-0.128-3.413333-0.192-6.826667-0.192-10.24 0-158.08 130.069333-286.677333 291.904-290.176L512 128z m0 138.666667a149.333333 149.333333 0 1 0 0 298.666666 149.333333 149.333333 0 0 0 0-298.666666z m0 64a85.333333 85.333333 0 1 1 0 170.666666 85.333333 85.333333 0 0 1 0-170.666666z" p-id="7088"></path></svg>
+      <p>公司位置：福州市闽侯县</p>
+    </div> 
+    <div class="foot">
+      <svg t="1624332390469" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7234" width="200" height="200"><path d="M874.666667 375.189333V746.666667a64 64 0 0 1-64 64H213.333333a64 64 0 0 1-64-64V375.189333l266.090667 225.6a149.333333 149.333333 0 0 0 193.152 0L874.666667 375.189333zM810.666667 213.333333a64.789333 64.789333 0 0 1 22.826666 4.181334 63.616 63.616 0 0 1 26.794667 19.413333 64.32 64.32 0 0 1 9.344 15.466667c2.773333 6.570667 4.48 13.696 4.906667 21.184L874.666667 277.333333v21.333334L553.536 572.586667a64 64 0 0 1-79.893333 2.538666l-3.178667-2.56L149.333333 298.666667v-21.333334a63.786667 63.786667 0 0 1 35.136-57.130666A63.872 63.872 0 0 1 213.333333 213.333333h597.333334z" p-id="7235"></path></svg>
+      <p>E-mail：1238@qq.com</p>
+    </div>   
+      <img src="./img/院徽.jpg">
+      </div>
+      <div id="foot">
+          <p>54何磊制作</p>
+      </div>
+  </div>
+  <script>
+    axios.get("https://lingqule.papamk.com/wp-json/w2w/v1/products/").then(function(res){
+        $(function(){
+            
+            for(var i=0;i<4;i++){  
+                console.log(res.data[0]);  
+                var p = $(`
+                <div>
+            <img src="${res.data[i].images[0].src}">
+            <p>${res.data[i].name}</p>
+        </div>
+        `);
+                $('#news').append(p);    
+                p.attr('id',res.data[i].id);         
+            };
+             $("#id1 div").click(function(){
+             window.location.href = `news-detail.html?id=${$(this).attr('id')}`;              
+         });
+        })
+        })
+
+
+  </script>
+</body>
+</html>

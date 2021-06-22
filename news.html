@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻列表</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+        height: 100px;
+        vertical-align: top;
+        background-color: rgb(189, 187, 186);
+        display: flex;
+        justify-content: center;
+        }
+        #header img{
+        width: 100px;
+        height: 100%;
+        display: inline-block;
+        }
+        #header h1{
+            display: inline-block;
+            margin: auto 0;
+            }
+        #container{
+
+        width: 950px;
+        height: 100%;
+
+        }
+        #container a{
+        margin-top: 30px;
+        margin-left: 40px;
+        float:right;
+        }
+        #id1{
+            
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            
+            }
+        #id1 div{
+            width: 560px;
+            background-color:#FEF0EF;
+            margin: 20px;
+            display: flex;
+            }
+        #id1 div img{
+            width: 250px;
+            height: 300px;
+            padding:1%;
+            box-sizing: border-box;
+            }
+        #text{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            height: 280px;
+            margin: -30px;
+        }
+        #text p{
+            word-wrap: break-word;
+            width: 250px;
+        }
+        a{margin-right: 20px;float: right;}
+
+        #id3{
+          display: flex;
+            background-color:rgb(189, 187, 186);
+            height: 300px;
+            width: 100%;
+            flex-direction: column;
+        }
+        #container3 img{
+            width: 230px;
+            height: 230px;
+        }
+        #container3{
+            margin: auto 0;
+            display: flex;
+            width: 1200px;
+            height: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        #foot{
+            margin:auto 0;
+            width: 1200px;
+            height: 20%;
+            border-top: black solid 2px;
+            margin: 0 auto;
+        }
+        #foot p{
+            text-align: center;
+        }
+        #page{
+            display: flex;
+            margin: 0 auto;
+        }
+        #id{
+            display: flex;
+            margin: 0 auto;
+            width: 1200px;
+            flex-wrap: wrap;
+            }
+        #id1>.con1:hover{
+            margin-top: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="./img/小米商标.jpg">
+        <h1>小米官网</h1>
+        <div id="container">
+            <a href="./recordingus.html">关于我们</a><a href="./news.html">新闻</a><a href="./index.html">首页</a>
+      </div>
+      </div>
+      <h1 style="text-align: center;">企业新闻</h1>
+      <hr style="width: 100px;background-color: black;height: 3px;margin: 0 auto;">
+      <div id="id">
+      <div  id="id1">
+          
+    </div>
+
+    <div id="page">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+        <li class="page-item">
+        <a class="page-link" onclick="leftpage()" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li class="page-item"><a class="page-link" onclick="uppage(1),geturl(current);">1</a></li>
+        <li class="page-item"><a class="page-link" onclick="uppage(2),geturl(current);">2</a></li>
+        <li class="page-item"><a class="page-link" onclick="uppage(3),geturl(current);">3</a></li>
+        <li class="page-item">
+        <a class="page-link" onclick="rightpage()" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+        </ul>
+        </nav>
+    </div>
+</div>
+<div id="id3">
+    <div id="container3">
+      <div class="foot">
+      <svg t="1624332274031" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6700" data-spm-anchor-id="a313x.7781069.0.i2" width="200" height="200"><path d="M673.194667 413.973333h78.72c-14.890667-116.053333-116.629333-205.824-239.914667-205.824-123.306667 0-225.024 89.792-239.914667 205.824h78.72v264.661334H234.666667a85.333333 85.333333 0 0 1-85.333334-85.333334v-93.994666a85.376 85.376 0 0 1 60.693334-81.706667l0.917333-0.256C224.490667 267.157333 354.090667 149.333333 512 149.333333c157.888 0 287.509333 117.802667 301.056 268.010667l0.917333 0.256A85.376 85.376 0 0 1 874.666667 499.306667v93.994666a85.333333 85.333333 0 0 1-85.333334 85.333334l-55.722666-0.021334v40.384a106.709333 106.709333 0 0 1-74.368 101.696A78.506667 78.506667 0 0 1 584.704 874.666667h-115.178667a78.421333 78.421333 0 0 1 0-156.821334h115.178667c27.050667 0 50.901333 13.696 64.981333 34.517334a63.744 63.744 0 0 0 23.381334-45.76l0.128-3.754667v-288.853333z" p-id="6701" data-spm-anchor-id="a313x.7781069.0.i3" class="selected" fill="#2c2c2c"></path></svg>
+        <p>客服电话：12345678</p>
+    </div>
+      <div class="foot">
+    <svg t="1624332364445" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7087" width="200" height="200"><path d="M512 128c164.949333 0 298.666667 129.941333 298.666667 290.261333 0 3.392-0.064 6.784-0.213334 10.24-3.669333 95.914667-58.24 203.776-147.797333 313.173334a1260.714667 1260.714667 0 0 1-139.818667 144.768l-10.837333 9.322666-10.837333-9.322666-13.013334-11.626667a1260.714667 1260.714667 0 0 1-126.805333-133.162667c-89.557333-109.376-144.128-217.237333-147.818667-313.173333-0.128-3.413333-0.192-6.826667-0.192-10.24 0-158.08 130.069333-286.677333 291.904-290.176L512 128z m0 138.666667a149.333333 149.333333 0 1 0 0 298.666666 149.333333 149.333333 0 0 0 0-298.666666z m0 64a85.333333 85.333333 0 1 1 0 170.666666 85.333333 85.333333 0 0 1 0-170.666666z" p-id="7088"></path></svg>
+    <p>公司位置：福州市闽侯县</p>
+  </div> 
+  <div class="foot">
+    <svg t="1624332390469" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7234" width="200" height="200"><path d="M874.666667 375.189333V746.666667a64 64 0 0 1-64 64H213.333333a64 64 0 0 1-64-64V375.189333l266.090667 225.6a149.333333 149.333333 0 0 0 193.152 0L874.666667 375.189333zM810.666667 213.333333a64.789333 64.789333 0 0 1 22.826666 4.181334 63.616 63.616 0 0 1 26.794667 19.413333 64.32 64.32 0 0 1 9.344 15.466667c2.773333 6.570667 4.48 13.696 4.906667 21.184L874.666667 277.333333v21.333334L553.536 572.586667a64 64 0 0 1-79.893333 2.538666l-3.178667-2.56L149.333333 298.666667v-21.333334a63.786667 63.786667 0 0 1 35.136-57.130666A63.872 63.872 0 0 1 213.333333 213.333333h597.333334z" p-id="7235"></path></svg>
+    <p>E-mail：1238@qq.com</p>
+  </div>   
+    <img src="./img/院徽.jpg">
+    </div>
+    <div id="foot">
+        <p>54何磊制作</p>
+    </div>
+</div>
+    
+    <script>
+        let current=Number(window.location.href.split("?page=")[1]) || 1;
+        function geturl(page) {
+            window.location.href = `?page=${page}`
+        }
+        uppage(current);
+        
+        function uppage(page){
+             current = page;
+            $("#id1").empty();
+            axios.get("https://lingqule.papamk.com/wp-json/w2w/v1/products?page="+page).then(function(res){
+        $(function(){
+            
+            for(var i=0;i<res.data.length;i++){  
+                console.log(res.data[0]);  
+                var p = $(`
+                <div class="con1">                
+                    <img src="${res.data[i].images[0].src}"/>                  
+                 <div id="text">
+                 <p>${res.data[i].name}</p>
+                 <p>${res.data[i].slug}</p>
+                 <p>${res.data[i].date_created}</p>
+                 <p>${res.data[i].date_modified}</p>
+                 </div>
+                </div>`);
+                $('#id1').append(p);    
+                p.attr('id',res.data[i].id);         
+            };
+             $("#id1 div").click(function(){
+             window.location.href = `news-detail.html?id=${$(this).attr('id')}`;              
+         });
+        })
+        })
+        }
+        function leftpage(){                                                                 
+                if(current>1){ 
+                    current--;
+               uppage(current);
+               geturl(current);
+                }else{
+                    return;
+                }                                     
+            };
+        function rightpage(){                                                                 
+                if(current<3){
+                    current++; 
+               uppage(current);
+               geturl(current);
+                }else{
+                    return;
+                }                                   
+            };
+
+      </script>
+</body>
+</html>
