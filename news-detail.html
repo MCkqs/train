@@ -283,63 +283,51 @@
         body{
             margin: 0;
         }
-        #header{
-        min-height: 100px;
-        vertical-align: top;
-        background-color: rgb(189, 187, 186);
-        display: flex;
-        justify-content: center;
-        }
-        #header img{
-        width: 100px;
-        height: 100%;
-        display: inline-block;
-        }
-        #header h1{
-            margin-top: 10px;
-            width: 120px;
-            }
-        #container{
+        #header {
+      min-height: 100px;
+      vertical-align: top;
+      background-color: rgb(189, 187, 186);
+      justify-content: center;
+    }
 
-        width: 950px;
-        height: 100%;
+    #header img {
+      width: 100px;
+      height: 100%;
+      display: inline-block;
+    }
 
-            }
-        #container a{
-        margin-top: 35px;
-        margin-left: 40px;
-        float:right;
-        }
-        #lian{
-        margin-right: 100px;
-        z-index: 10;
-        list-style: none;
-        }
-        button{
-        margin: 20px 30px;
-        float: right;
-        display: none;
-        }
-        #lian{
-            margin-right: 100px;
-            z-index: 10;
-            list-style: none;
-        }
-        button{
-            margin: 20px 30px;
-            float: right;
-            display: none;
-        }
-        #lian{
-            margin-right: 100px;
-            z-index: 10;
-            list-style: none;
-        }
-        button{
-            margin: 20px 30px;
-            float: right;
-            display: none;
-        }
+    #header h1 {
+      margin-top: 10px;
+      font-size: 35px;
+    }
+            #container {
+      display: flex;
+      width: 950px;
+      height: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    #container a {
+      margin-top: 35px;
+      margin-left: 40px;
+      float: right;
+    }
+
+    #lian {
+      margin-right: 40px !important;
+      z-index: 10;
+      list-style: none;
+    }
+    #lian li{
+      margin-right: 10px;
+      display: inline-block;
+    }
+    button {
+      margin: 40px 30px;
+      float: right;
+      display: none;
+    }
         #container1{
             display: flex;
             margin: 0 auto;
@@ -410,21 +398,26 @@
         #pic{
           width: 20%;float: right;
         }
+        #h{
+      display: flex;
+      width: 200px;
+    }
     </style>
 </head>
 <body>
-    <div id="header">
-        <img src="./img/小米商标.jpg">
-        <h1>小米官网</h1>
+    <div id="header">  
         <div id="container">
+          <div id="h">
+            <img src="./img/小米商标.jpg">
+        <h1>小米官网</h1>
+          </div>
           <button onclick="order()">菜单</button>
           <ul id="lian">
             <li><a href="./recordingus.html">关于我们</a></li>
             <li><a href="./news.html">新闻</a></li>
             <li><a href="./index.html">首页</a></li>
           </ul>
-          
-      </div>
+        </div>
       </div>
       <div id="id1">
 
